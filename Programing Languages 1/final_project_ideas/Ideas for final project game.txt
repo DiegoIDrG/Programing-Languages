@@ -1,0 +1,25 @@
+The game needs to have options for both the user and computer to pick.
+The person gets to choose the option they want, the computer choose randomly.
+You choose your character by clicking on it
+When you choose it, it gets to the "battle table"
+You're asked if you are sure of your pick or want to change it (press battle)
+The pick of the computer appears in the "battle table"
+The picks "clash" with a table of existing results.
+The winner appears big like winner and you or the computer gets the point in a counter
+If there's a draw, 
+
+
+
+Un juego donde los characters sean los botones,
+crear personajes 8-bit
+crear un background 8-bit
+(?) personajes de materiales según la escala de mohs
+
+
+Look nice - Keep the logic simple
+
+A la izquierda tienes la lista de tus personajes
+A la derecha ves la lista de la computadora
+Puedes ver cuál escoge la computadora antes de que aparezca en el tablero de batalla
+
+

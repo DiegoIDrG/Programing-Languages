@@ -1,0 +1,48 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-image: url(../images/BackgroundExample.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Poppins", sans-serif;
+}
+
+.header-menu {
+    display: flex;
+    padding: 16px 20px;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+ul {
+    padding: 0;
+    display: flex;
+    column-gap: 16px;
+    list-style-type: none;
+}
+
+main {
+    display: flex;
+}
+
+section {
+    flex-basis: 80%;
+    padding: 20px;
+}
+
+aside {
+    flex-basis: 20%;
+    padding: 20px;
+    border-left: 1px solid rgb(0, 0, 0);
+}
+
+footer {
+    padding: 20px;
+}
