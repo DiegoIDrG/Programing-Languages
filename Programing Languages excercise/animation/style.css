@@ -1,0 +1,158 @@
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem
+}
+
+@keyframes colorChange {
+    from {
+        background-color: #000000;
+    }
+
+    to {
+        background-color: #60519e;
+    }
+}
+
+.color-change {
+    width: 200px;
+    height: 200px;
+    background-color: #45474c;
+    animation-name: colorChange;
+    animation-duration: 2s;
+}
+
+@keyframes colorsChange {
+    25% {
+        background-color: #2c9fc9;
+    }
+
+    50% {
+        background-color: #a964c0;
+    }
+
+    75% {
+        background-color: #22d761;
+    }
+
+    100% {
+        background-color: #e1c986;
+    }
+}
+
+.color-change-percentage {
+    width: 200px;
+    height: 200px;
+    background-color: #d0e091;
+    animation-name: colorsChange;
+    animation-duration: 2s;
+    /* add how many times animation should run */
+    animation-iteration-count: 3;
+    /* specify name and make it infinite */
+    animation: colorsChange 5s infinite;
+}
+
+@keyframes rightMove {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 700px;
+    }
+}
+
+.right-move {
+    width: 100px;
+    height: 50px;
+    background-color: rgb(114, 221, 175);
+    position: relative;
+    animation: rightMove 2s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes bottomMove {
+    from {
+        top: 0px;
+    }
+
+    to {
+        top: 700px;
+    }
+}
+
+.bottom-move {
+    width: 100px;
+    height: 50px;
+    background-color: rgb(114, 221, 143);
+    position: relative;
+    animation: bottomMove 5s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(900deg);
+    }
+
+    100% {
+        transform: rotate(1800deg);
+    }
+}
+
+.bottom-move {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(39, 123, 147);
+    position: relative;
+    animation: rotate 5s infinite;
+    animation-timing-function: linear;
+    transition-timing-function: linear;
+}
+
+@keyframes squareMoves {
+    0% {
+        background-color: rgb(86, 131, 179);
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: yellow;
+        left: 200px;
+        top: 0px;
+    }
+
+    50% {
+        background-color: rgb(85, 154, 160);
+        left: 200px;
+        top: 200px;
+    }
+
+    75% {
+        background-color: rgb(205, 218, 94);
+        left: 0px;
+        top: 200px;
+    }
+
+    100% {
+        background-color: rgb(166, 108, 176);
+        left: 0px;
+        top: 0px;
+    }
+}
+
+.square-moves {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(112, 207, 164);
+    position: relative;
+    animation: squareMoves 2s infinite;
+    /* sets the number of times an animation sequence should be played before stopping. */
+    /* animation-iteration-count: 2; */
+    animation-direction: alternate;
+}
